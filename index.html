@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7ccc5824fb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>My Pet</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="menu"></div>
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a> 
+                    <h1>My Pet</h1>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars menu-icon"></i>
+                </label>
+                    <ul class="menu-nav">
+                        <li><a class="activo" href="index.html">Inicio</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/prevencion.html">Prevencion</a></li>
+                        <li><a href="pages/info.html">Info </a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="form">
+                <form class="formulario" method="post">
+                    <h2>agenda tu turno</h2>
+                    <div class="div-form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="div-form">
+                        <label for="email"> Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="div-form">
+                        <label for="date">Fecha:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <button class="button open" type="submit" id="open">Enviar</button>
+                    <div class="modal_container" id="modal_container">
+                        <div class="turno">
+                            <h2>gracias</h2>
+                            <p>te enviaremos la confirmacion por mail</p>
+                            <button id="close" class="close">cerrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="fondo-modal" id="fondo-modal">
+                <div class="ventana-modal" id="ventana-modal">
+                <h2>Bienvenidos a My Pet</h2>
+                <p class="mb-4">Somos una veterinaria con los mejores profecionales en el cuidado de tus mascotas.</p>
+                <div>
+                    <button class="boton" id="cerrar-aviso">Cerrar</button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="descripcion">
+            <h2>Quiénes Somos</h2>
+            <div class="descripcion-p">
+                <p >En My Pet contamos con los mejores Médicos
+                    Veterinarios con formación académica de calidad para ofrecerles 
+                    las herramientas necesarias para cuidar de tu mascota.Consultá 
+                    todas nuestras sucursales de hospitales veterinarios y visítanos 
+                    para poder ayudarte y ayudar a tu compañero.</p> 
+            </div>
+        </section>
+        <section class="servicios">
+            <h2>nuestros servicios</h2>
+            <div class="card-h">
+                <div class="card-ser">
+                    <img src="img/cirugia.png" alt="">
+                    <h3>Cirugía</h3>
+                </div>
+                <div class="card-ser">
+                    <img src="img/medicina.png" alt="">
+                    <h3>Clínica </h3>
+                </div>
+                <div class="card-ser">
+                    <img src="img/rayos-x.png" alt="">
+                    <h3>Radiología</h3>
+                </div>
+                <div class="card-ser">
+                    <img src="img/ecografia.png" alt="">
+                    <h3>Ecografia</h3>
+                </div>
+                <div class="card-ser">
+                    <img src="img/microscopio.png" alt="">
+                    <h3>Laboratorio</h3>
+                </div>
+                <div class="card-ser">
+                    <img src="img/medico.png" alt="">
+                    <h3>Atención clínica especial</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="consultorio">
+                <div class="d-consultorio">
+                    <img src="img/consultorio.png" alt="">
+                    <div class="pg">
+                        <h2>nuestro consultorio</h2>
+                    <p>Pensados para la comodidad del paciente y del cliente, nuestros consultorios cumplen con los más altos estándares de calidad para la atención de tu mascota en todas nuestras clínicas veterinarias.</p>
+                    </div>
+                </div>
+                <div class="d-consultorio">
+                    <div class="pg">
+                        <h2>nuestra trayectoria</h2>
+                    <p>Desde 1997 My Pet brinda la mejor atención veterinaria para tu mascota. Para ello, seleccionamos los mejores profesionales veterinarios, quienes continúan en capacitación y formación constante, para darle la más cálida y profesional atención a tu mascota.</p>
+                    </div>
+                    <img src="img/trayectoria.jpg" alt="">
+                </div>
+        </section>
+        
+        <section class="beneficios">
+            <div class="d-beneficios">
+                <img src="img/vet.jpg" alt="">
+                <h3>Consulta veterinaria</h3>
+                <p>brindamos atencion veterinaria las 24hs, los 7 dias de la semana por video llamada o en nuestras sucursales de Lunes a Viernes de 9.30 a 13:30 hs y 16:00 a 20:00 hs
+                    Sábados de 9.30 a 18 hs.</p>
+            </div>
+            <div class="d-beneficios">
+                <img src="img/vet4.png" alt="">
+                <h3>nuestros servicios</h3>
+                <p>En My Pet contamos con un excelente equipo de médicos veterinarios preparados para brindarle a tu mascota la mejor atencion.
+                    contamos con servicios de emergencia, cirugias, vacunaciones,etc.</p>
+            </div>
+            <div class="d-beneficios">
+                <img src="img/vet3.png" alt="">
+                <h3>…somos con tú.</h3>
+                <p>Amamos a nuestros pets, y los cuidamos con el mismo cariño y amor que nos cuidamos nosotros mismos. Nos apasiona ver que nuestros pets sean felices, estén saludables y que no les falte nada.</p>
+            </div>
+        </section>
+        
+        <section class="gal">
+            <div class="galeria">
+                <img src="../img/galeria1.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria2.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria3.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria4.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria5.jpg" alt="vet" class="imagen">
+            </div>
+            <div class="galeria">
+                <img src="../img/galeria6.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria7.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria8.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria9.jpg" alt="vet" class="imagen">
+                <img src="../img/galeria10.jpg" alt="vet" class="imagen">
+            </div>
+        </section>
+        
+        <section>
+            <h2>Productos</h2>
+            <div class="productos">
+                <div class="produ">
+                    <img src="img/productos1.jpg" alt="">
+                    <h3>Farmacia veterinaria</h3>
+                    <p>Poseemos una gran farmacia veterinaria con decenas de 
+                        productos acordes a la necesidad de tu mascota. Así 
+                        buscamos brindarle el acompañamiento terapéutico que 
+                        requiera según su condición.</p>
+                </div>
+                <div class="produ">
+                    <img src="img/productos2.jpg" alt="">
+                    <h3>Alimentos balanceados</h3>
+                    <p>Para cada etapa de la vida tu mascota requiere una alimentación 
+                        específica. Contamos con las marcas de alimentos líderes en 
+                        calidad para brindarle las mejores opciones en su crecimiento, 
+                        juventud y vejez. También contamos con líneas de alimentos </p>
+                </div>
+                <div class="produ">
+                    <img src="img/productos3.jpg" alt="">
+                    <h3>Pet shop</h3>
+                    <p>Además de prevenir y tratar enfermedades, queremos que tu mascota 
+                        disfrute de juegos y paseos. Para eso te ofrecemos gran variedad de 
+                        productos de pet shop, desde juguetes y huesos de cuero hasta pretales 
+                        y correas con diseños particulares según su necesidad.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="redes">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a> 
+                </div>
+                <h3>seguinos</h3>
+                <ul>
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="color: #b6b4b4;"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: #b6b4b4;"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="color: #b6b4b4;"></i></a></li>
+                    <li><a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok" style="color: #b6b4b4;"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>contacto</h3>
+                <p>Buenos Aires - Argentina</p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-envelope" style="color: #b6b4b4;"></i>
+                        <span>info@veterinariamypet.com</span></li>
+                    <li>
+                        <i class="fa-solid fa-phone" style="color: #b6b4b4;"></i>
+                        <span>(011) 4342-1773</span></li>
+                </ul>
+                <h3>direccion</h3>
+                <ul>
+                    <li>piedras 719- San Telmo</li>
+                    <li>Recoleta, Charcas 2810</li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13130.896588657204!2d-58.394764809838556!3d-34.636410671719545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1685277843662!5m2!1ses-419!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            <div class="copy">
+                <p>Diseñado por Nayheli Loza - &copy; año 2023</p>
+            </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

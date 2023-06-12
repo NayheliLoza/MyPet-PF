@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@500&display=swap');
+
+/*body*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: #552d10;
+}
+
+h2{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/*header*/
+
+.checkbtn, #check{ display: none;}
+
+header{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 55rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    flex: 1 1;
+    margin-right: 50px;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.logo h1{
+    align-self: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 3.5rem;
+    color: #fbf2d7;
+}
+
+/*menu*/
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav li{
+    margin-right: 1rem ;
+    margin-top: 1.5rem;
+}
+
+.menu-nav li:hover{
+    background-color: #cda57a;
+    height: 2.5rem;
+    scale: 1;
+}
+
+.menu-nav a{
+    font-family: 'Alegreya', serif; 
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #552d10;
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+}
+
+.activo{
+    background-color: #cda57a;
+}
+
+/*formulario turnos*/
+
+.form{
+    width: 500px;
+    background-color: #cda57a;
+    text-align: center;
+    border-radius: 10%;
+    border: solid #552d10 2px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.formulario h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.div-form {
+    margin-bottom: 20px;
+}
+
+.div-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.div-form input{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbf2d7;
+}
+
+.div-form input:focus{
+    outline: none;
+    background-color: #fbf2d7;
+}
+
+.button {
+    font-size: 20px;
+    width: 50%;
+    background-color: #cda57a;
+    color: #552d10;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #552d10;
+    color: #fbf2d7;
+    scale: 1.05;
+    transition: 0.1s;
+}
+
+/*ventana modal form*/
+
+.open {
+	background-color: #fbf2d7;
+	border: 3px solid #552d10;
+	border-radius: 20px;
+	color: #552d10;
+	font-size: 1.5rem;
+	padding: 10px;
+    margin: 20px 0;
+}
+.close{
+	background-color: #fbf2d7;
+	border: solid #552d10 3px;
+	border-radius: 20px;
+	color: #000000;
+	font-size: 14px;
+	padding: 10px 25px;
+    margin-top: 20px;
+}
+.modal_container {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.3);
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	pointer-events: none;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	transition: opacity 0.3s ease;
+}
+
+.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.turno{
+	background-color: #cda57a;
+	width: 650px;
+	max-width: 100%;
+	padding: 30px 50px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px #552d10;
+	text-align: center;
+}
+
+.turno h2 {
+	color: #552d10;
+}
+
+.turno p {
+	font-size: 16px;
+	color: #552d10;
+}
+
+.open:hover {
+    background-color: #552d10;
+    color: #fbf2d7;
+    scale: 1.05;
+    transition: 0.1s;
+}
+
+
+/*descripcion*/
+
+.descripcion{
+    width: 80%;
+    padding:30px 30px;
+    margin: -3rem auto 1rem ;
+    background-color: #fbf2d7;
+    border-radius: 20px;
+    position: relative;
+}
+
+.descripcion-p{column-count: 2;
+    column-gap: 30px;
+    column-rule: 10px ;
+    font-family:'Mukta Vaani', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/*card servicios*/
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem auto ;
+    padding: 1rem 0;
+    width: 80%;
+}
+
+.card-h{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-ser img{
+    width: 120px;
+    margin: 1rem;
+}
+
+.card-ser {
+    width: 11rem;
+    height: 14rem;
+    margin: 1.5rem 2rem;
+    border-radius: 20%;
+    border: solid #552d10;
+    text-align: center;
+    background-color: #fbf2d7;
+    
+}
+
+/*ventana modal*/
+
+.ventana-modal {
+    margin:20px auto;
+    background-color: #fbf2d7;
+    padding: 60px 50px;
+    width: 500px;
+    line-height: 150%;
+    text-align: center;
+}
+
+.ventana-modal img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+.ventana-modal h2{
+    color: #552d10;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Mouse Memoirs', sans-serif;
+    padding-bottom: 20px ;
+    
+}
+
+.ventana-modal p {
+    color: #552d10;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.ventana-modal .boton {
+    background: #cda57a;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 100px ;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ventana-modal .boton:hover {
+    background: #fbf2d7;
+    border: solid #552d10 2px;
+    color: #552d10;
+}
+
+.ventana-modal .activo {
+	display: block;
+}
+
+
+
+.fondo-modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9176470588);
+    padding-top: 100px;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.fondo-modal.activo {
+    display: block;
+}
+
+
+/*descripcion consultorio*/
+
+.consultorio{display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.d-consultorio{ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem 3rem;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+}
+
+.d-consultorio img{width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    border: solid 2px #552d10;
+}
+
+.pg{
+    width: 340px;
+    padding:0 2rem;
+    text-align: justify;
+}
+
+/*section beneficios*/
+
+.beneficios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4rem 0 4rem 0;
+    padding: 2rem 0;
+    background-color: #fbf2d7;
+}
+
+.d-beneficios{
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    width: 20rem;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    margin: 0.6rem;
+}
+
+.d-beneficios p{
+    text-align: justify;
+}
+
+.d-beneficios img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+.d-beneficios h3{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/*galeria*/
+
+.gal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.galeria{
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.galeria .imagen{
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    transition: 0.3s;
+    filter: brightness(50%);
+}
+
+.galeria .imagen:hover{
+    flex: 1 1 200px;
+    filter: drop-shadow(0 2px 16px #533b29) contrast(110%);
+}
+
+/*section productos*/
+
+.productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+}
+
+.produ{
+    width: 29rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border: solid #552d10 2px;
+    margin: 1rem;
+}
+
+.produ img{
+    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+    height: 300px;
+}
+
+.produ p{
+    padding: 15px;
+    text-align: justify;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+}
+
+.produ h3{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.8rem;
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #000000;
+    color: #b6b4b4;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+
+.footer li{
+    list-style: none;
+    padding-top:15px ;
+}
+
+.redes ul{
+    display: flex;
+    font-size: 2rem;
+}
+
+.redes li a{
+    padding-right: 20px;
+}
+
+/*copy*/
+
+.copy{
+    background-color: #535252;
+    clear: both;
+    color: #b6b4b4;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1080px) {
+    .d-beneficios{
+    width: 15rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.produ{
+    width: 20rem;
+}
+
+.produ img{
+    height: 280px;
+}
+
+.logo h1{
+    font-size: 2.7rem;
+}
+
+.menu-nav a{
+    font-size: 1.2rem;
+}
+
+.galeria{
+    width: 500px;
+    height: 200px;
+}
+
+}
+
+@media screen and (max-width:800px){
+
+    .checkbtn{display: block;}
+
+    #check:checked ~ ul{left: 0;
+        transition: all .25s;
+    }
+
+    
+    header{
+        height: 40rem;
+        }
+    
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        color: black;
+        }
+    
+        
+    
+    .menu-nav{
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 100%;
+        background:  beige;
+        width: 100%;
+        height: 400px;
+        right:0;
+        }
+    
+    .menu-nav li{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        }
+    
+    .form{
+        display: none;
+    }
+    
+    
+}

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+
+
+/*body*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: #552d10;
+}
+
+h3{
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.5rem;
+}
+
+p{
+    font-family:'Mukta Vaani', sans-serif;
+}
+
+/*header*/
+
+.checkbtn, #check{ display: none;}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{
+    display: flex;
+    flex: 1 1;
+    margin-right: 50px;
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.logo h1{
+    align-self: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 3.5rem;
+    color: #552d10;
+}
+
+/*menu*/
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav li{
+    margin-right: 1rem ;
+    margin-top: 1.5rem;
+}
+
+.menu-nav li:hover{
+    background-color: #cda57a;
+    height: 2.5rem;
+    scale: 1;
+}
+
+.menu-nav a{
+    font-family: 'Alegreya', serif; 
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #552d10;
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+}
+
+.activo{
+    background-color: #cda57a;
+}
+
+/*info*/
+
+.s-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info{
+    margin: 2rem 3rem;
+    padding: 1rem; 
+    display: flex;
+    width: 720px;
+    border-radius: 5px;
+    border: solid #552d10;
+}
+
+.info img{
+    width: 300px;
+}
+
+.text-info{
+    padding-left: 10px;
+}
+
+/*section nosotros*/
+
+.nosotros{
+    background-color: #fbf2d7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 3rem  ;
+    margin: 3rem;
+}
+
+.car-nosotros h3{
+    text-align: center;
+}
+
+.car-nosotros p{
+    text-align: center;
+    width:200px ;
+}
+
+.car-nosotros img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #000000;
+    color: #b6b4b4;
+}
+
+.footer h3{
+    font-size: 1.5rem;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+
+.footer li{
+    list-style: none;
+    padding-top:15px ;
+}
+
+.redes ul{
+    display: flex;
+    font-size: 2rem;
+}
+
+.redes li a{
+    padding-right: 20px;
+}
+
+/*copy*/
+
+.copy{
+    background-color: #535252;
+    clear: both;
+    color: #b6b4b4;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1080px) {
+
+
+.logo h1{
+    font-size: 2.7rem;
+}
+
+.menu-nav a{
+    font-size: 1.2rem;
+}
+
+.perrito img{
+    width: 500px;
+}
+
+.frase{
+    top: -15%;
+}
+
+}
+
+@media screen and (max-width:800px){
+
+    .checkbtn{display: block;}
+
+    #check:checked ~ ul{left: 0;
+        transition: all .25s;
+    }
+
+    
+    header{
+        height: 40rem;
+        }
+    
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        color: black;
+        }
+    
+        
+    
+    .menu-nav{
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 100%;
+        background:  beige;
+        width: 100%;
+        height: 400px;
+        right:0;
+        }
+    
+    .menu-nav li{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        }
+
+    .main {
+        margin: -30rem auto 1rem;
+        }
+
+    .frase{
+        display: none;
+        }
+
+    .perrito img{
+        width: 350px;
+        }
+        
+}
